@@ -12,4 +12,14 @@ public class Stack {
     public boolean isEmpty(){
         return this.bottom == null;
     }
+
+    public void push (String data){
+        if (isEmpty()){
+            bottom = new Nodo(data);
+            top = bottom;
+        } else{
+            Nodo nuevo = new Nodo(data);
+            top.setNext(nuevo);
+        }
+    }
 }

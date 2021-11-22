@@ -15,5 +15,14 @@ public class Nodo {
         public void setData(String data){
         this.data = data;
         }
-}
+
+        public Nodo getNext(){
+            return next;
+        }
+
+        public void setNext(Nodo next){
+        this.next = next;
+        }
+    }
+
 
